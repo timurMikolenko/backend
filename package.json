@@ -1,12 +1,12 @@
 {
   "dependencies": {
     "express": "^4.17.2",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "vercel": "^23.1.2"
   },
   "name": "backend",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node src/app.js"
   },
