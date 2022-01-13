@@ -24,7 +24,6 @@ connection.connect(err => {
     }
 });
 
-
 function getQur(callback){
     let query = "SELECT posts_title, posts_text, posts_img FROM my_posts";
     connection.query(query, 
@@ -34,12 +33,6 @@ function getQur(callback){
     });
 }
 
-// let query2 = "SELECT * FROM wp_users";
-//     connection.query(query2, 
-//         (err, result, field) => {
-//             console.log(err);
-//             console.log(result);
-//     });
 
 app.get("/api", (req, res)=>{
     getQur((drive)=>{ 
