@@ -34,10 +34,14 @@ function getQur(callback){
 }
 
 
-app.get("/api", (req, res)=>{
-    getQur((drive)=>{ 
-        res.json({posts_data: drive});
-        // console.log(drive);
-        // connection.end();
-     });
-});
+// app.get("/api", (req, res)=>{
+//     getQur((drive)=>{ 
+//         res.json({posts_data: drive});
+//         // console.log(drive);
+//         // connection.end();
+//      });
+// });
+
+app.get('/',(req,res) => {
+    res.send("This is a sample express app")
+})
